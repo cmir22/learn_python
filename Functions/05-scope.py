@@ -1,14 +1,11 @@
-saludo = ""
+saludo = 25
 
 
 def saludar():
-    saludo = "Hola Mundo"
+    #  this is the way to use  global variables
+    #  But should not be used global variables
+    global saludo
+    saludo = 24
 
-
-def saluda_chanchito():
-    saludo = "Hola Chanchito"
-
-
-saluda_chanchito()
 
 print(saludo)
