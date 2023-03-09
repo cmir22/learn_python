@@ -11,11 +11,19 @@ print(numbers, new_sorted)
 
 users = [["Chanchito", 4], ["Pepe", 5], ["Manolo", 9]]
 
+# ----------------------------------------------
+# Example without lambda:
 
-def ordenate(element):
-    return element[1]
+# def ordenate(element):
+#     return element[1]
+# users.sort(key=ordenate, reverse=True)
+# ----------------------------------------------
 
 
-users.sort(key=ordenate, reverse=True)
+# ----------------------------------------------
+# Example with lambda:
+
+users.sort(key=lambda el: el[1], reverse=False)
+# ----------------------------------------------
 
 print(users)
