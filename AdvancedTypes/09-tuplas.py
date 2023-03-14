@@ -9,3 +9,4 @@ point = [1, 2]
 new_list_tuple = numbers[:2]  # this do not affect the real tuple
 
 print(tuple(point))
+kklkkkk
