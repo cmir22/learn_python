@@ -1,6 +1,6 @@
 numbers = [1, 2, 3]
 
-# Ugly
+# Ugly and do not use it
 # first = numbers[0]
 # second = numbers[1]
 # third = numbers[2]
