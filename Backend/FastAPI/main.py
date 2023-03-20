@@ -9,5 +9,5 @@ async def root():
 
 
 @app.get('/url')
-async def root():
+async def root2():
     return {"url_course": "google.com"}
