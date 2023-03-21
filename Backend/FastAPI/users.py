@@ -4,6 +4,22 @@ from pydantic import BaseModel
 app = FastAPI()
 
 
-@app.get('/users')
-async def users():
-    return [{"name": "Manuelin", }, {"name": "Adelaila"}]
+class User():
+    id: int
+    name: str
+    surname: str
+    url: str
+    age: int
+
+
+users = []
+
+
+@app.get('/user/{id}')
+async def user(id: int):
+    return User()
+
+
+@app.post('/user/{id}')
+async def user(id: int):
+    return User()
