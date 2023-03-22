@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-# from pydantic import BaseModel
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -10,9 +10,6 @@ class User():
     surname: str
     url: str
     age: int
-
-
-users = []
 
 
 @app.get('/user/{id}')
