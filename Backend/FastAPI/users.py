@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+# from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -16,10 +16,5 @@ users = []
 
 
 @app.get('/user/{id}')
-async def user(id: int):
-    return User()
-
-
-@app.post('/user/{id}')
 async def user(id: int):
     return User()
